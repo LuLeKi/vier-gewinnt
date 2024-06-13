@@ -1,10 +1,10 @@
 #set minimum version (fetch_content available since 3.11)
 cmake_minimum_required(VERSION 3.11)
 #set project name
-project(task_vehicle_driver)
+project(viergewinnt)
 
 #set variable exeName
-set(exeName "vehicleDriver")
+set(exeName "viergewinnt")
 
 # Specify C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -20,23 +20,19 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 #find_package(nlohmann_json REQUIRED)
 
 #Variante 2: --> einfach, kann im Build aber länger dauern
-include(FetchContent)
-FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
-FetchContent_MakeAvailable(json)
+# include(FetchContent)
+# FetchContent_Declare(json URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz)
+# FetchContent_MakeAvailable(json)
 
 set(Sources
-    src/car.cpp
-    src/driver.cpp
-    src/motorbike.cpp
-    src/vehicle.cpp
-    src/main.cpp
+    src/test.cpp
 )
 #add executable
 add_executable(${exeName} ${Sources})
 #include
 target_include_directories(${exeName} PUBLIC "${CMAKE_SOURCE_DIR}/inc/")
 #link
-target_link_libraries(${exeName} nlohmann_json::nlohmann_json)
+# target_link_libraries(${exeName} nlohmann_json::nlohmann_json)
 
 
 # Detect the operating system
@@ -54,8 +50,8 @@ set(LibSources src/car.cpp
     src/motorbike.cpp
     src/vehicle.cpp
 )
-add_library(vehicleLib STATIC ${LibSources})
-target_include_directories(vehicleLib PUBLIC "${CMAKE_SOURCE_DIR}/inc/")
+
+#  target_include_directories(vehicleLib PUBLIC "${CMAKE_SOURCE_DIR}/inc/")
 add_executable(${exeName}_copy src/main_copy.cpp)
 target_include_directories(${exeName}_copy PUBLIC "${CMAKE_SOURCE_DIR}/inc/")
 target_link_libraries(${exeName}_copy vehicleLib nlohmann_json::nlohmann_json)
