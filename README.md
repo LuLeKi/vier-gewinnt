@@ -1,3 +1,4 @@
-# C++ Projekt 
+# C++ Projekt
 # Vier gewinnt
-#Tim Siewert, Luis Kilic
+### Structure of classes located in ViergewinntStructure.drawio
+## By Tim Siewert and Luis Kilic
