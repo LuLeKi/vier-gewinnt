@@ -36,6 +36,13 @@
 *.json
 .vscode/
 
+#folder
+build
+Build
+
+output
+Output
+
 # Lectures
 *.pdf
 
