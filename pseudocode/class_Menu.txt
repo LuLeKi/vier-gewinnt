@@ -1,0 +1,22 @@
+class Menu
+
+display Info()
+
+
+setMode()
+
+print: which mode?
+
+//select mode
+
+if pvp:
+	set player 1 name 
+	set player 2 name
+
+else if pve:
+	switch:
+		robo1
+		robo2
+		....
+
+
