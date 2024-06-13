@@ -1,5 +1,5 @@
-# Remove executables
-*
+# Remove executables for linux
+*  
 !*.*
 !*/
 
@@ -36,8 +36,8 @@
 *.json
 .vscode/
 
-#folder
-build
+#folders
+build/
 Build
 
 output
@@ -49,9 +49,5 @@ Output
 # Temporary folders
 **/tmp/*
 
-# Libraries
-4_wins/lib/*
-bowling_kata/lib/*
 
-#live_coding folder
-05_live_coding/*
+
