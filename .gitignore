@@ -39,7 +39,7 @@
 # build folder
 build/
 output/
-
+Debug/
 
 # Lectures
 *.pdf
