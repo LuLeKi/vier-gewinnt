@@ -36,9 +36,8 @@
 *.json
 .vscode/
 
-#folders
+# build folder
 build/
-Build
 
 
 # Lectures
