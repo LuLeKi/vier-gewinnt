@@ -1,0 +1,50 @@
+# Remove executables
+*
+!*.*
+!*/
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# VSCode specific
+*.json
+.vscode/
+
+# Lectures
+*.pdf
+
+# Temporary folders
+**/tmp/*
+
+# Libraries
+4_wins/lib/*
+bowling_kata/lib/*
+
+#live_coding folder
+05_live_coding/*
