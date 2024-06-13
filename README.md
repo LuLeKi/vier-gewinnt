@@ -1,2 +1,3 @@
-# vier-gewinnt
-trdt#fdskl
+# C++ Projekt 
+# Vier gewinnt
+#Tim Siewert, Luis Kilic
